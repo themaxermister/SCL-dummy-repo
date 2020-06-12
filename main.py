@@ -9,7 +9,7 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 # For example, running this (by clicking run or pressing Shift+Enter) will list all files under the input directory
 
 import os
-for dirname, _, filenames in os.walk('/data'): #'/kaggle/input'
+for dirname, _, filenames in os.walk('./data'): #'/kaggle/input'
     for filename in filenames:
         print(os.path.join(dirname, filename))
 
